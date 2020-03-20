@@ -43,4 +43,5 @@ class Song
       song = find_by_name(name)
     end
     song
+  end
 end
