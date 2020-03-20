@@ -29,10 +29,10 @@ class Song
   end
 
   def self.find_by_name(name)
-    self.all.each do |song|
+    self.all.map do |song|
       if song.name == name
         song
       end
-    end
+    end.compact
   end
 end
